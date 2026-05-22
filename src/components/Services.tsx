@@ -2,16 +2,22 @@ import { motion } from 'motion/react';
 import * as Icons from 'lucide-react';
 import { SERVICES } from '../constants';
 import { cn } from '@/src/lib/utils';
-import { useNavigate } from 'react-router-dom';
 
 export function Services() {
-  const navigate = useNavigate();
-
   const scrollToContact = () => {
-    // Scroll to contact section
-    const contactSection = document.querySelector('#contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const element = document.getElementById('contact');
+    if (element) {
+      // Scroll the element into view
+      window.scrollTo({
+        top: element.offsetTop - 100,
+        behavior: 'smooth'
+      });
+    } else {
+      // Fallback: scroll down by a large amount
+      window.scrollBy({
+        top: 2000,
+        behavior: 'smooth'
+      });
     }
   };
 
@@ -86,4 +92,4 @@ export function Services() {
       </div>
     </section>
   );
-    }
+                }

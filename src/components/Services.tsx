@@ -2,15 +2,17 @@ import { motion } from 'motion/react';
 import * as Icons from 'lucide-react';
 import { SERVICES } from '../constants';
 import { cn } from '@/src/lib/utils';
+import { useNavigate } from 'react-router-dom';
 
 export function Services() {
+  const navigate = useNavigate();
+
   const scrollToContact = () => {
-    setTimeout(() => {
-      const contactSection = document.getElementById('contact');
-      if (contactSection) {
-        contactSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 0);
+    // Scroll to contact section
+    const contactSection = document.querySelector('#contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   };
 
   return (
@@ -84,4 +86,4 @@ export function Services() {
       </div>
     </section>
   );
-                          }
+    }

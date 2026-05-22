@@ -4,21 +4,8 @@ import { SERVICES } from '../constants';
 import { cn } from '@/src/lib/utils';
 
 export function Services() {
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      // Scroll the element into view
-      window.scrollTo({
-        top: element.offsetTop - 100,
-        behavior: 'smooth'
-      });
-    } else {
-      // Fallback: scroll down by a large amount
-      window.scrollBy({
-        top: 2000,
-        behavior: 'smooth'
-      });
-    }
+  const handleLearnMore = () => {
+    alert('Button works!');
   };
 
   return (
@@ -78,7 +65,7 @@ export function Services() {
                 </p>
 
                 <button 
-                  onClick={scrollToContact}
+                  onClick={handleLearnMore}
                   type="button"
                   className="mt-8 flex items-center text-sm font-bold text-slate-300 group-hover:text-white transition-colors cursor-pointer hover:scale-105 active:scale-95 bg-transparent border-none p-0"
                 >
@@ -92,4 +79,4 @@ export function Services() {
       </div>
     </section>
   );
-                }
+              }

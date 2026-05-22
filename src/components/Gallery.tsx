@@ -5,7 +5,7 @@ import { X } from 'lucide-react';
 const galleryImages = [
   { url: "https://res.cloudinary.com/dn5dfwdzd/image/upload/w_800,h_450,c_fill,q_80/IMG_20260522_202531_zjrvpj.png", title: "Luxury Bath Installation" },
   { url: "https://res.cloudinary.com/dn5dfwdzd/image/upload/w_800,h_450,c_fill,q_80/IMG_20260522_202545_caapng.png", title: "Modern Gas Boiler" },
-  { url: "https://res.cloudinary.com/dn5dfwdzd/image/upload/w_800,h_450,c_fill,q_80/IMG_20260522_202500_lvqfhn.png0", title: "Wet Room Refurbish" },
+  { url: "https://res.cloudinary.com/dn5dfwdzd/image/upload/w_800,h_450,c_fill,q_80/IMG_20260522_202500_lvqfhn.png", title: "Wet Room Refurbish" },
   { url: "https://res.cloudinary.com/dn5dfwdzd/image/upload/w_800,h_450,c_fill,q_80/Untitled_design_20260522_115038_0000_w1qrhh.png", title: "Underfloor Heating" },
   { url: "https://res.cloudinary.com/dn5dfwdzd/image/upload/w_800,h_450,c_fill,q_80/IMG_20260522_202516_e0idcq.png", title: "Commercial Plumbing" },
   { url: "https://res.cloudinary.com/dn5dfwdzd/image/upload/w_800,h_450,c_fill,q_80/v1779480038/20260522_114907_0000_elds64.png", title: "Boiler Servicing" },

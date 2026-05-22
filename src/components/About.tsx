@@ -47,7 +47,7 @@ export function About() {
               Decades of Excellence in every <span className="text-brand-blue text-glow-blue">Pipe & Fitting</span>
             </h3>
             <p className="text-slate-400 text-lg mb-10 leading-relaxed">
-              At Elite Heating Services, we've built our reputation on a simple foundation: 
+              At Elite Heating & Plumbing, we've built our reputation on a simple foundation: 
               doing professional work at a fair price. As a family-run business, we understand 
               the importance of having a safe, warm, and functional home.
             </p>

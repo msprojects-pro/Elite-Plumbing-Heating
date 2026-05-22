@@ -74,7 +74,7 @@ export function PrivacyPolicy() {
               <section>
                 <h2 className="text-xl font-bold text-white mb-4">Contact Us</h2>
                 <p>
-                  If you have any questions about this Privacy Policy, please contact Elite Heating Services.
+                  If you have any questions about this Privacy Policy, please contact Elite Plumbing & Heating.
                 </p>
               </section>
             </div>

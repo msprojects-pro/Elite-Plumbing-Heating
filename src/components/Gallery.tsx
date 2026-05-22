@@ -3,14 +3,14 @@ import { motion, AnimatePresence } from 'motion/react';
 import { X } from 'lucide-react';
 
 const galleryImages = [
-  { url: "https://images.unsplash.com/photo-1585938389612-a552a28d6914?auto=format&fit=crop&q=80&w=800", title: "Luxury Bath Installation" },
-  { url: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=800", title: "Modern Gas Boiler" },
-  { url: "https://images.unsplash.com/photo-1620626011761-9963d7b69763?auto=format&fit=crop&q=80&w=800", title: "Wet Room Refurbish" },
-  { url: "https://images.unsplash.com/photo-1542037104857-ffbb0b9155fb?auto=format&fit=crop&q=80&w=800", title: "Underfloor Heating" },
-  { url: "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&q=80&w=800", title: "Commercial Plumbing" },
-  { url: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800", title: "Boiler Servicing" },
-  { url: "https://images.unsplash.com/photo-1595113316349-9fa4046a8947?auto=format&fit=crop&q=80&w=800", title: "Tiling & Finishing" },
-  { url: "https://images.unsplash.com/photo-1613214049843-02821e5567b1?auto=format&fit=crop&q=80&w=800", title: "Kitchen Plumbing" },
+  { url: "https://res.cloudinary.com/dn5dfwdzd/image/upload/w_800,h_450,c_fill,q_80/IMG_20260522_202531_zjrvpj.png", title: "Luxury Bath Installation" },
+  { url: "https://res.cloudinary.com/dn5dfwdzd/image/upload/w_800,h_450,c_fill,q_80/IMG_20260522_202545_caapng.png", title: "Modern Gas Boiler" },
+  { url: "https://res.cloudinary.com/dn5dfwdzd/image/upload/w_800,h_450,c_fill,q_80/IMG_20260522_202500_lvqfhn.png0", title: "Wet Room Refurbish" },
+  { url: "https://res.cloudinary.com/dn5dfwdzd/image/upload/w_800,h_450,c_fill,q_80/Untitled_design_20260522_115038_0000_w1qrhh.png", title: "Underfloor Heating" },
+  { url: "https://res.cloudinary.com/dn5dfwdzd/image/upload/w_800,h_450,c_fill,q_80/IMG_20260522_202516_e0idcq.png", title: "Commercial Plumbing" },
+  { url: "https://res.cloudinary.com/dn5dfwdzd/image/upload/w_800,h_450,c_fill,q_80/v1779480038/20260522_114907_0000_elds64.png", title: "Boiler Servicing" },
+  { url: "https://res.cloudinary.com/dn5dfwdzd/image/upload/w_800,h_450,c_fill,q_80/v1779480039/20260522_115303_0000_udh7vz.png", title: "Tiling & Finishing" },
+  { url: "https://res.cloudinary.com/dn5dfwdzd/image/upload/w_800,h_450,c_fill,q_80/v1779480011/20260522_113616_0000_c94hhu.png", title: "Kitchen Plumbing" },
 ];
 
 export function Gallery() {

@@ -4,6 +4,10 @@ import { SERVICES } from '../constants';
 import { cn } from '@/src/lib/utils';
 
 export function Services() {
+  const scrollToContact = () => {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section id="services" className="py-24 relative">
       <div className="max-w-7xl mx-auto px-6">
@@ -60,10 +64,13 @@ export function Services() {
                   {service.description}
                 </p>
 
-                <div className="mt-8 flex items-center text-sm font-bold text-slate-300 group-hover:text-white transition-colors cursor-pointer">
+                <button 
+                  onClick={scrollToContact}
+                  className="mt-8 flex items-center text-sm font-bold text-slate-300 group-hover:text-white transition-colors cursor-pointer hover:scale-105 active:scale-95 bg-transparent border-none p-0"
+                >
                   <span>Learn More</span>
                   <Icons.ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
-                </div>
+                </button>
               </motion.div>
             );
           })}
@@ -71,4 +78,4 @@ export function Services() {
       </div>
     </section>
   );
-}
+                }

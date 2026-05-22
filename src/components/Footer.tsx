@@ -92,7 +92,7 @@ export function Footer() {
         </div>
 
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-slate-500 text-sm">
-          <p>© {currentYear} Elite Heating Services. All rights reserved.</p>
+          <p>© {currentYear} Elite Plumbing & Heating. All rights reserved.</p>
           <div className="flex items-center gap-8">
             <Link to="/privacy" className="hover:text-slate-300 transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-slate-300 transition-colors">Terms of Service</Link>

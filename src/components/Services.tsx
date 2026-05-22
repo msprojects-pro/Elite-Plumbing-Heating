@@ -5,7 +5,12 @@ import { cn } from '@/src/lib/utils';
 
 export function Services() {
   const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    setTimeout(() => {
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 0);
   };
 
   return (
@@ -66,6 +71,7 @@ export function Services() {
 
                 <button 
                   onClick={scrollToContact}
+                  type="button"
                   className="mt-8 flex items-center text-sm font-bold text-slate-300 group-hover:text-white transition-colors cursor-pointer hover:scale-105 active:scale-95 bg-transparent border-none p-0"
                 >
                   <span>Learn More</span>
@@ -78,4 +84,4 @@ export function Services() {
       </div>
     </section>
   );
-                }
+                          }

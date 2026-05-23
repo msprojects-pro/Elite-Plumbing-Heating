@@ -4,8 +4,15 @@ import { SERVICES } from '../constants';
 import { cn } from '@/src/lib/utils';
 
 export function Services() {
-  const handleLearnMore = () => {
-    alert('Button works!');
+  // Smooth scroll to contact section
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
   };
 
   return (
@@ -64,10 +71,10 @@ export function Services() {
                   {service.description}
                 </p>
 
-                <button 
-                  onClick={handleLearnMore}
-                  type="button"
-                  className="mt-8 flex items-center text-sm font-bold text-slate-300 group-hover:text-white transition-colors cursor-pointer hover:scale-105 active:scale-95 bg-transparent border-none p-0"
+                {/* Updated Learn More Button */}
+                <button
+                  onClick={scrollToContact}
+                  className="mt-8 flex items-center text-sm font-bold text-slate-300 hover:text-white group-hover:text-brand-blue transition-all duration-300 cursor-pointer hover:glow-blue"
                 >
                   <span>Learn More</span>
                   <Icons.ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
